@@ -19,7 +19,8 @@ async function onSearch(evt) {
   newsApiService.query = evt.target.elements.searchQuery.value.trim();
   if (newsApiService.query === ``) {
     return Notify.failure(`Empty string, please type something`);
-  } newsApiService.resetPage();
+  }
+  newsApiService.resetPage();
   const res = await newsApiService.fetchArticles();
     refs.btn.classList.remove(`is-hidden`);
   if (res.hits.length === 0) {
