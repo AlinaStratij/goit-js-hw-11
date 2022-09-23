@@ -80,10 +80,13 @@ button:hover {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* max-width: 320px; */
-    /* display: flex; */
+    max-width: 380px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+p{
+  margin-right: 8px;
 }
 .info{
     display: flex;
@@ -106,9 +109,10 @@ img:hover {
   transform: scale(1.05);
   box-shadow: #09cc33;
 }
-/* 
-.is-hidden{
-  position: absolute;
+
+
+ .is-hidden {
+    position: absolute;
     white-space: nowrap;
     width: 1px;
     height: 1px;
@@ -118,9 +122,8 @@ img:hover {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-} */
-
-
-.is-hidden{
-  display: none;
+}
+.load-more{
+ margin: 20px auto 20px;
+    display: block;
 }
