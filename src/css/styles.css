@@ -73,7 +73,7 @@ button:hover {
     background-color: azure;
     padding: 3px 3px;
     border: 1px solid rgba(5, 143, 47, 0.23);
-    box-shadow: 0px 1px 5px rgba(6, 116, 61, 0.702), 0px 1px 5px rgba(37, 22, 198, 0.702),
+    box-shadow: 0px 1px 5px rgba(4, 250, 127, 0.702), 0px 1px 5px rgba(8, 65, 41, 0.702),
         0px 1px 5px rgba(3, 102, 24, 0.702);
 
     transition-property: box-shadow, border;
@@ -128,4 +128,8 @@ img:hover {
 .load-more{
  margin: 20px auto 20px;
     display: block;
+    border: 1px solid rgb(24, 88, 27);
+color: rgb(24, 88, 27);
+background-color: rgb(17, 170, 86);
+font-size: inherit;
 }
