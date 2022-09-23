@@ -1,5 +1,18 @@
-export const createPhoto = hits => {
-    return hits.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => 
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+export function createPhoto(data) {
+  console.log(data);
+  return data
+    .map(
+      ({
+        webformatURL,
+        largeImageURL,
+        tags,
+        likes,
+        views,
+        comments,
+        downloads,
+      }) =>
         `<div class="photo-card">
         <a class="gallery__item" 
         href=${largeImageURL}>
@@ -24,5 +37,10 @@ export const createPhoto = hits => {
             
         </div>
         </div>`
-    ).join('');
+    )
+    .join('');
 }
+let lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
