@@ -71,7 +71,7 @@ button:hover {
 .photo-card {
     margin: 15px;
     background-color: azure;
-    padding: 15px 15px;
+    padding: 3px 3px;
     border: 1px solid rgba(5, 143, 47, 0.23);
     box-shadow: 0px 1px 5px rgba(6, 116, 61, 0.702), 0px 1px 5px rgba(37, 22, 198, 0.702),
         0px 1px 5px rgba(3, 102, 24, 0.702);
@@ -84,6 +84,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.photo-card:hover{
+   transform: scale(1.05);
 }
 p{
   margin-right: 8px;
@@ -106,7 +109,6 @@ img {
     height: auto;
 }
 img:hover {
-  transform: scale(1.05);
   box-shadow: #09cc33;
 }
 
