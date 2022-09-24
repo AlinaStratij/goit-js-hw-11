@@ -64,30 +64,29 @@ button:hover {
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-left: -25px;
     justify-content: center;
 
 }
 .photo-card {
-    margin: 15px;
-    background-color: azure;
-    padding: 3px 3px;
-    border: 1px solid rgba(5, 143, 47, 0.23);
-    box-shadow: 0px 1px 5px rgba(4, 250, 127, 0.702), 0px 1px 5px rgba(8, 65, 41, 0.702),
-        0px 1px 5px rgba(3, 102, 24, 0.702);
-
-    transition-property: box-shadow, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+ width: calc(25% - 25px);
+margin-bottom: 25px;
+margin-left: 25px;
+background-color: rgb(234, 245, 240);
+    /* padding: 3px 3px; */
+    border-radius: 10px;
+    border: 1px solid rgb(245, 252, 247);
+    box-shadow: 0px 1px 5px rgba(13, 128, 70, 0.702), 0px 1px 5px rgba(8, 65, 41, 0.702),
+        0px 1px 5px rgba(20, 24, 21, 0.702);
     max-width: 380px;
-
+overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .photo-card:hover{
-   transform: scale(1.05);
+   transform: scale(1.08);
+   box-shadow: 8px 5px 5px rgb(3, 78, 34);
 }
 p{
   margin-right: 8px;

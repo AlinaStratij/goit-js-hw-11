@@ -19,7 +19,8 @@ async function onSearch(evt) {
   newsApiService.query = evt.target.elements.searchQuery.value.trim();
   if (newsApiService.query === ``) {
     refs.btn.classList.add(`is-hidden`);
-    return Notify.failure(`Empty string, please type something`);
+    clearGalleryContainer();
+    return Notify.failure(`Empty string, please type something`); 
   }
   newsApiService.resetPage();
   const res = await newsApiService.fetchArticles();
